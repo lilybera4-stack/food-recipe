@@ -1,0 +1,552 @@
+v<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top px-4 justify-content-between fw-bold"
+        style="background-color: #f37021; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold" href="#">
+                <i class="bi bi-house-door-fill me-1"></i> MealFinder.
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav h-100 d-flex flex-column justify-content-between flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Beef</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Chicken</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Dessert</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Lamb</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Miscellaneous</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Pasta</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Pork</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Seafood</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Side</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Starter</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Vegan</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Vegetarian</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Breakfast</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Goat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="position-relative text-center text-white" style="margin-top: 56px;">
+
+        <img src="./img1.jpeg" alt="Hero Image" style="width: 100%; height: 600px; object-fit: cover;">
+
+
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.45);"></div>
+
+
+        <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 d-flex flex-column align-items-center"
+            style="z-index: 3;">
+
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <input type="text" class="form-control rounded-pill border-0 shadow-sm px-4 py-2 me-2"
+                    style="max-width: 350px;" placeholder="Search recipes here...">
+                <button class="btn rounded-circle d-flex align-items-center justify-content-center text-white border-0"
+                    style="background-color: #fd7e14; width: 45px; height: 45px;"
+                    onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#fd7e14';"
+                    onmouseout="this.style.backgroundColor='#fd7e14'; this.style.color='#ffffff';">
+                    <i class="bi bi-search fs-5"></i>
+                </button>
+            </div>
+
+            <h2 class="fw-bold text-white mb-2">What are your favorite cuisines?</h2>
+            <p class="text-light text-uppercase fw-semibold small" style="letter-spacing: 2px;">PERSONALIZE YOUR
+                EXPERIENCE</p>
+        </div>
+    </div>
+    <div class="container my-5">
+        <div class="card p-4" style="border:1px solid #f37021;">
+            <h3 class="fw-bold mb-3" style="color: #f37021;">Vegetarian</h3>
+            <p class="text-secondary lh-lg mb-0" style="font-size: 15px; text-align: justify;">
+                Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood,
+                and the flesh of any other animal),and may also include abstention from by-products of animal
+                slaughter.<br>
+                Vegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for
+                sentient life.Such ethical motivations have been codified under various religious beliefs, as well as
+                animal rights advocacy.<br>
+                Other motivations for vegetarianism are health-related, political, environmental, cultural, aesthetic,
+                economic, or personal preference.There are variations of the diet as well: an ovo-lacto vegetarian diet
+                includes both eggs and dairy products,<br>
+                an ovo-vegetarian diet includes eggs but not dairy products, and a lacto-vegetarian diet includes dairy
+                products but not eggs.A vegan diet excludes all animal products, including eggs and dairy.
+                Some vegans also avoid other animal products such as beeswax, leather or silk clothing, and goose-fat
+                shoe polish.
+            </p>
+        </div>
+    </div>
+
+    <div class="container my-5 px-4" style="margin-top: 2000px;">
+        <div class="d-flex flex-column align-items-start">
+            <h5 class="fw-bold text-uppercase m-0" style="letter-spacing: 3px; font-size: 25px; color: #333333;">
+                MEALS</h5>
+            <div style="width: 75px; height: 3px; background-color: #fd7e14;" class="mt-2"></div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+           
+
+            <div class="col">
+                <a href="./mealdetails.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative">
+                        <img src="./baingan bharta.jpg.jpeg" class="card-img-top p-3"
+                            style="height: 160px; object-fit: contain;">
+                        <div class="card-body p-2">
+                            <small class="text-muted d-block mb-1">Indian</small>
+                            <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Baingan Bharta</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./beetroot soup.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Beetroot Soup</h6>
+                        <small class="text-muted d-block mb-1">Polish</small>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./chickpea fajitas.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Chickpea Fajitas</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./crispy eggplant.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Crispy Eggplant</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./dal fry.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Dal Fry</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./egg drop soup.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Egg Drop Soup</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./eggplant adobo.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Eggplant Adobo</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./flamiche.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Flamiche</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./ful medames.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Ful Medames</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./gigantes plaki.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Gigantes Plaki</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./grilled eggplant with coconut milk.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Grilled eggplant<br>with
+                            coconut milk</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./kafteji.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <small class="text-muted d-block mb-1">Tunisian</small>
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Kafteji</h6>
+                    </div>
+                </div>
+            </div>
+
+             <div class="col">
+                <a href="./mealdetails2.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative">
+                        <img src="./cabbage soup.jpg.jpeg" class="card-img-top p-3"
+                            style="height: 160px; object-fit: contain;">
+                        <div class="card-body p-2">
+                            <small class="text-muted d-block mb-1">Indian</small>
+                            <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Cabbage Soup</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./kidney bean curry.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <small class="text-muted d-block mb-1">India</small>
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Kidney Bean Curry</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./koshari.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Koshari</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./leblebi soup.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <small class="text-muted d-block mb-1">Tunisian</small>
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Leblebi Soup</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./carrot.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Moroccan Carrot Soup</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./mashrrom & chestnul.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Mushroom &<br>Chestnut
+                            Rotolo</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./potato salad.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Potato
+                            Salad(Olivier)<br>Salad</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./cake.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Provencal
+                            Omelette<br>Cake</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./ratalova.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Ratatouille</h6>
+                        <small class="text-muted d-block mb-1">France</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./imp23.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Ribollita</h6>
+                        <small class="text-muted d-block mb-1">Italian</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./imp25.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Shakshuka</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./imp26.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Smoky Lentil
+                            Chill<br>with Squash</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img28.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Spicy Arrabiata<br>Penne
+                        </h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./imp30.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Spinach &
+                            Ricotta<br>Cannelloni</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./imp31.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Squash Linguine</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img32.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Summer Pistou</h6>
+                        <small class="text-muted d-block mb-1"></small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img33.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <small class="text-muted d-block mb-1">Maxicam</small>
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Stuffed Bell
+                            Peppers<br>with Quinoa and<br> Black Beans</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img34.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Yaki Udon</h6>
+                        <small class="text-muted d-block mb-1">Japanese</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img35.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Vegetarian Chill</h6>
+                        <small class="text-muted d-block mb-1">British</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img36.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Vegetarian<br>Casserole
+                        </h6>
+                        <small class="text-muted d-block mb-1">British</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img37.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Tortang Talong</h6>
+                        <small class="text-muted d-block mb-1">Filpino</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img38.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Tahini Lentils</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border-0 shadow-sm category-card position-relative">
+
+                    <img src="./img39.jpg.jpeg" class="card-img-top p-3" alt="Beef"
+                        style="height: 160px; object-fit: contain;">
+                    <div class="card-body p-2">
+                        <!-- <small class="text-muted d-block mb-1">France</small -->
+                        <h6 class="card-title fw-bold text-dark mb-0" style="font-size: 14px;">Summer Pistou</h6>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top px-4 justify-content-between fw-bold"
+        style="background-color: #f37021; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold" href="#">
+                <i class="bi bi-house-door-fill me-1"></i> MealFinder.
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end bg-light" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav h-100 d-flex flex-column justify-content-between flex-grow-1 pe-3">
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Beef</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Chicken</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Dessert</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Lamb</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Miscellaneous</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Pasta</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Pork</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Seafood</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Side</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Starter</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Vegan</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Vegetarian</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Breakfast</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color: #6a6a6a;" href="#">Goat</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="position-relative text-center text-white" style="margin-top: 56px;">
+
+        <img src="./imp1.jpg" alt="Hero Image" style="width: 100%; height: 600px; object-fit: cover;">
+
+
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.45);"></div>
+
+
+        <div class="position-absolute top-50 start-50 translate-middle w-100 px-3 d-flex flex-column align-items-center"
+            style="z-index: 3;">
+
+            <div class="d-flex justify-content-center align-items-center mb-4">
+                <input type="text" class="form-control rounded-pill border-0 shadow-sm px-4 py-2 me-2"
+                    style="max-width: 350px;" placeholder="Search recipes here...">
+                <button class="btn rounded-circle d-flex align-items-center justify-content-center text-white border-0"
+                    style="background-color: #fd7e14; width: 45px; height: 45px;"
+                    onmouseover="this.style.backgroundColor='#ffffff'; this.style.color='#fd7e14';"
+                    onmouseout="this.style.backgroundColor='#fd7e14'; this.style.color='#ffffff';">
+                    <i class="bi bi-search fs-5"></i>
+                </button>
+            </div>
+
+            <h2 class="fw-bold text-white mb-2">What are your favorite cuisines?</h2>
+            <p class="text-light text-uppercase fw-semibold small" style="letter-spacing: 2px;">PERSONALIZE YOUR
+                EXPERIENCE</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <nav class="navbar px-4 justify-content-between fw-bold" style="background-color: #f37021; z-index: 1000;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fw-bold" href="#">
+                    <i class="bi bi-house-door-fill me-1"></i> >> BAINGAN BHARTA
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container my-5 px-4" style="margin-top: 2000px;">
+        <div class="d-flex flex-column align-items-start">
+            <h5 class="fw-bold text-uppercase m-0" style="letter-spacing: 3px; font-size: 25px; color: #333333;">
+                MEAL DETAILS</h5>
+            <div style="width: 75px; height: 3px; background-color: #fd7e14;" class="mt-2"></div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-light">
+        <div class="row g-4">
+            <div class="col-md-5">
+                <img src="./baingan bharta.jpg.jpeg" class="img-fluid rounded w-100" alt="...">
+            </div>
+            <div class="col-md-7 p-4">
+                <div class="card-body">
+                    <h3 class="" style="color: #f37021;">Baingan Bharta</h3>
+                    <hr>
+                    <div class="mb-3 text-secondary" style="font-size: 13px;">
+                        <p class="mb-2 fw-bold" style="font-size: 15px;"><strong>CATEGORY:</strong> VEGETARIAN</p>
+                        <p class="mb-2"><strong>Source:</strong><a href="http://www.vegrecipesofindia.com/baingan..."
+                                target="_blank"
+                                class="text-secondary text-decoration-underline">http://www.vegrecipesofindia.com/baingan...</a>
+                        </p>
+                    </div>
+                    <div class="d-flex align-items-center gap-2 border-">
+                        <span class="fw-bold text-dark me-1">Tags:</span>
+                        <span class="border border-danger rounded  px-2 py-1 text-secondary text-danger">Spicy</span>
+                        <span class="border border-danger rounded px-2 py-1 text-secondary text-danger">Bun</span>
+                        <span class="border border-danger rounded px-2 py-1 text-secondary text-danger">Calarific</span>
+                    </div>
+
+                    <div class="p-3 rounded-2 text-white mt-3" style="background-color: #d96327;">
+                        <h6 class="fw-bold mb-3 border-bottom border-light pb-2" style="font-size: 14px;">Ingredients
+                        </h6>
+
+                        <div class="row row-cols-3 g-2" style="font-size: 13px;">
+                            <div class="col"><i class="bi bi-1-circle-fill me-1"></i> Aubergine</div>
+                            <div class="col"><i class="bi bi-2-circle-fill me-1"></i> Onion</div>
+                            <div class="col"><i class="bi bi-3-circle-fill me-1"></i> Tomatoes</div>
+                            <div class="col"><i class="bi bi-4-circle-fill me-1"></i> Garlic</div>
+                            <div class="col"><i class="bi bi-5-circle-fill me-1"></i> Green Chilli</div>
+                            <div class="col"><i class="bi bi-6-circle-fill me-1"></i> Red Chili Powder</div>
+                            <div class="col"><i class="bi bi-7-circle-fill me-1"></i> Oil</div>
+                            <div class="col"><i class="bi bi-8-circle-fill me-1"></i> Coriander Leaves</div>
+                            <div class="col"><i class="bi bi-9-circle-fill me-1"></i> Salt</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 px-4" style="margin-top: 2000px;">
+        <div class="d-flex flex-column align-items-start">
+            <h5 class="fw-bold">
+                Measure:</h5>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="card bg-light p-4">
+            <div class="row row-cols-2 g-2" style="font-size: 13px;">
+                <div class="col">🥄 1 Large</div>
+                <div class="col">🥄 1/2 Cup</div>
+                <div class="col">🥄 1 Cup</div>
+                <div class="col">🥄 6 Cloves</div>
+                <div class="col">🥄 1/4 Teaspoon</div>
+                <div class="col">🥄 1.5 tablespoon</div>
+                <div class="col">🥄 1 tablespoon chopped</div>
+                <div class="col">🥄 as required</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5 bg-light">
+        
+        <h6 class="fw-bold text-dark mb-3" style="font-size: 15px;">Instructions:</h6>
+
+
+        <div class="d-flex flex-column gap-2 text-secondary" style="font-size: 13px; line-height: 1.6;">
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>1. Rinse the baingan (eggplant or aubergine) in water. Pat dry with a kitchen napkin. Apply some
+                    oil all over and keep it for roasting on an open flame. You can also grill the baingan or roast in
+                    the oven. But then you won't get the smoky flavor of the baingan. Keep the eggplant turning after a
+                    2 to 3 minutes on the flame, so that its evenly cooked. You could also embed some garlic cloves in
+                    the baingan and then roast it.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>2. Roast the aubergine till its completely cooked and tender. With a knife check the doneness. The
+                    knife should slide easily in aubergines without any resistance. Remove the baingan and immerse in a
+                    bowl of water till it cools down.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>3. You can also do the dhungar technique of infusing charcoal smoky flavor in the baingan. This is
+                    an optional step. Use natural charcoal for this method. Heat a small piece of charcoal on flame till
+                    it becomes smoking hot and red.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>4. Make small cuts on the baingan with a knife. Place the red hot charcoal in the same plate where
+                    the roasted aubergine is kept. Add a few drops of oil on the charcoal. The charcoal would begin to
+                    smoke.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>5. As soon as smoke begins to release from the charcoal, cover the entire plate tightly with a
+                    large bowl. Allow the charcoal smoke to get infused for 1 to 2 minutes. The more you do, the more
+                    smoky the baingan bharta will become. 1 just keep for a minute. Alternatively you can also do this
+                    dhungar method once the baingan bharta is cooked, just like the way we do for Dal Tadka.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>6. Peel the skin from the roasted and smoked eggplant.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>7. Chop the cooked eggplant finely or you can even mash it.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>8. In a kadai or pan, heat oil. Then add finely chopped onions and garlic.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>9. Saute the onions till translucent. Don't brown them.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>10. Add chopped green chilies and saute for a minute.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>11. Add the chopped tomatoes and mix it well.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>12. Bhuno (saute) the tomatoes till the oil starts separating from the mixture.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>13. Now add the red chili powder, Stir and mix well.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>14. Add the chopped cooked baingan.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>15. Stir and mix the chopped baingan very well with the onion-tomato masala mixture.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>16. Season with salt. Stir and saute for some more 4 to 5 minutes more.</span>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+                <i class="" style="font-size: 12px;"></i>
+                <span>17. Finally stir in the coriander leaves with the baingan bharta or garnish it with them. Serve
+                    Baingan Bharta with phulkas, rotis or chapatis. It goes well even with bread, toasted or grilled
+                    bread and plain rice or jeera rice.</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container my-5 px-4" style="margin-top: 2000px;">
+        <div class="d-flex flex-column align-items-start">
+            <h5 class="fw-bold text-uppercase m-0" style="letter-spacing: 3px; font-size: 25px; color: #333333;">
+                categories</h5>
+            <div style="width: 75px; height: 3px; background-color: #fd7e14;" class="mt-2"></div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <div class="col">
+                <a href="./beef.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">BEEF</span>
+                        <img src="./dessert.png" class="card-img-top p-3" alt="Beef"
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div> 
+
+            <div class="col">
+                <a href="./chicken.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">Chicken</span>
+                        <img src="./chicken.png" class="card-img-top p-3" alt="Chicken"
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./dessert.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">DESSERT</span>
+                        <img src="./dessert.png" class="card-img-top p-3"
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./lamb.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">LAMB</span>
+                        <img src="./lamb.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./miscellaneous.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">MISCELLANEOUS</span>
+                        <img src="./miscellaneous.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./pasta.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">PASTA</span>
+                        <img src="./pasta.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./pork.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">PORK</span>
+                        <img src="./pork.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./seafood.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">SEAFOOD</span>
+                        <img src="./seafood.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./side.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">SIDE</span>
+                        <img src="./side.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./starter.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">STARTER</span>
+                        <img src="./starter.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./vegan.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">VEGAN</span>
+                        <img src="./vegan.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./vegetarian.html" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">VEGETARIAN</span>
+                        <img src="./vegetarian.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+
+
+            <div class="col">
+                <a href="./breakfast.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">BREAKFAST</span>
+                        <img src="./breakfast.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="./goat.png" class="text-decoration-none">
+                    <div class="card h-100 border-0 shadow-sm category-card position-relative bg-light">
+                        <span class="badge position-absolute top-0 end-0 m-2 px-2 py-1 rounded text-uppercase fw-bold"
+                            style="background-color: #fd7e14; color: white;">GOAT</span>
+                        <img src="./goat.png" class="card-img-top p-3" 
+                            style="height: 160px; object-fit: contain;">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
